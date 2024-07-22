@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Edit Expense</title>
+</head>
+<body>
+<h1>Edit Expense</h1>
+<form action="/edit_expense/{{ index }}" method="POST">
+<label for="expense">Expense:</label>
+<input type="text" name="expense" id="expense" value="{{ expense }}">
+<br>
+<label for="amount">Amount:</label>
+<input type="number" name="amount" id="amount" value="{{ amount }}">
+<br>
+<input type="submit" value="Edit Expense">
+</form>
+</body>
+</html>
+
