@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Expenses</title>
+</head>
+<body>
+<h1>Expenses</h1>
+<ul>
+{% for expense in expenses %}
+<li>{{ expense.expense }} - {{ expense.amount }}</li>
+<a href="/edit_expense/{{ loop.index }}">Edit</a>
+<a href="/delete_expense/{{ loop.index }}">Delete</a>
+{% endfor %}
+</ul>
+</body>
+</html>
+
+
